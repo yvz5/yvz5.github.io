@@ -226,13 +226,14 @@
 				mode, in which every tenth run begins with a short video. The game displays no
 				other kinds of advertisement.</p>
 			<p>Users in the European Economic Area, the United Kingdom or Switzerland are
-				shown Google's consent message when the game is first started, where they may
-				accept or refuse personalised advertising. Until the message has been answered,
-				the game transmits no analytics data and no crash reports; once it has been
-				answered, they are transmitted as described above. The answer may be changed at
-				any time through the game's menu (<em>Privacy settings</em> on the hero screen).
-				Users who refuse may still watch rewarded videos, but the advertisements shown
-				will not be personalised.</p>
+				shown Google's consent message when the game is first started. Firebase
+				Analytics and Firebase Crashlytics collect data from these users only if they
+				give their consent in that message. If they refuse, or have not yet answered,
+				no analytics data and no crash reports are collected or transmitted. The answer
+				may be changed at any time through the game's menu (<em>Privacy settings</em>
+				on the hero screen); a withdrawal takes effect immediately. Users who refuse
+				may still watch rewarded videos, but the advertisements shown will not be
+				personalised.</p>
 			<p>Users in any country may reset or delete their advertising ID in the device
 				settings (on most Android devices: Settings, Google, Ads).</p>
 
@@ -250,7 +251,7 @@
 				game does not use accounts, we are unable to associate the data collected by
 				Google with any individual. To exercise these rights, the user may:</p>
 			<ul>
-				<li>change the advertising consent under <em>Privacy settings</em> in the
+				<li>change or withdraw consent under <em>Privacy settings</em> in the
 					game;</li>
 				<li>reset or delete the advertising ID in the device settings;</li>
 				<li>uninstall the game, which ends all collection;</li>
@@ -367,12 +368,13 @@
 				videoyla başladığı Hayatta Kalma modudur. Oyun başka türde reklam
 				göstermez.</p>
 			<p>Avrupa Ekonomik Alanı, Birleşik Krallık veya İsviçre'deki kullanıcılara, oyun
-				ilk kez başlatıldığında Google'ın onay mesajı gösterilir; bu mesajda
-				kişiselleştirilmiş reklamlar kabul edilebilir veya reddedilebilir. Mesaj
-				yanıtlanana kadar oyun hiçbir analiz verisi veya çökme raporu aktarmaz; mesaj
-				yanıtlandıktan sonra bu veriler yukarıda açıklandığı şekilde aktarılır. Verilen
-				yanıt, oyun menüsünden (kahraman ekranındaki <em>Gizlilik ayarları</em>) her
-				zaman değiştirilebilir. Reddeden kullanıcılar ödüllü videoları izlemeye devam
+				ilk kez başlatıldığında Google'ın onay mesajı gösterilir. Firebase Analytics ve
+				Firebase Crashlytics, bu kullanıcılardan yalnızca söz konusu mesajda onay
+				vermeleri hâlinde veri toplar. Kullanıcı onay vermezse veya mesajı henüz
+				yanıtlamamışsa hiçbir analiz verisi ya da çökme raporu toplanmaz ve aktarılmaz.
+				Verilen yanıt, oyun menüsünden (kahraman ekranındaki <em>Gizlilik
+					ayarları</em>) her zaman değiştirilebilir; onayın geri alınması derhâl
+				geçerli olur. Onay vermeyen kullanıcılar ödüllü videoları izlemeye devam
 				edebilir; ancak gösterilen reklamlar kişiselleştirilmez.</p>
 			<p>Bulunduğunuz ülkeden bağımsız olarak reklam kimliğinizi cihaz ayarlarından
 				sıfırlayabilir veya silebilirsiniz (çoğu Android cihazda: Ayarlar, Google,
@@ -394,8 +396,8 @@
 				herhangi bir kişiyle ilişkilendirmemiz mümkün değildir. Bu hakları kullanmak
 				için:</p>
 			<ul>
-				<li>oyundaki <em>Gizlilik ayarları</em> bölümünden reklam onayınızı
-					değiştirebilirsiniz;</li>
+				<li>oyundaki <em>Gizlilik ayarları</em> bölümünden onayınızı değiştirebilir
+					veya geri alabilirsiniz;</li>
 				<li>cihaz ayarlarından reklam kimliğinizi sıfırlayabilir veya
 					silebilirsiniz;</li>
 				<li>oyunu kaldırarak tüm veri toplama işlemini sona erdirebilirsiniz;</li>
@@ -518,13 +520,14 @@
 				einem kurzen Video beginnt. Andere Arten von Werbung zeigt das Spiel nicht.</p>
 			<p>Wenn Sie sich im Europäischen Wirtschaftsraum, im Vereinigten Königreich oder
 				in der Schweiz befinden, wird Ihnen beim ersten Start des Spiels die
-				Einwilligungsmeldung von Google angezeigt, in der Sie personalisierte Werbung
-				annehmen oder ablehnen können. Bis Sie diese Meldung beantwortet haben,
-				übermittelt das Spiel weder Analysedaten noch Absturzberichte; danach werden
-				diese wie oben beschrieben übermittelt. Sie können Ihre Entscheidung jederzeit
-				im Menü des Spiels ändern (<em>Datenschutz</em> auf dem Heldenbildschirm). Wenn
-				Sie ablehnen, können Sie weiterhin Belohnungsvideos ansehen; die angezeigte
-				Werbung ist dann jedoch nicht personalisiert.</p>
+				Einwilligungsmeldung von Google angezeigt. Firebase Analytics und Firebase
+				Crashlytics erheben Daten nur dann, wenn Sie in dieser Meldung Ihre
+				Einwilligung erteilen. Lehnen Sie ab oder haben Sie die Meldung noch nicht
+				beantwortet, werden weder Analysedaten noch Absturzberichte erhoben oder
+				übermittelt. Sie können Ihre Entscheidung jederzeit im Menü des Spiels ändern
+				(<em>Datenschutz</em> auf dem Heldenbildschirm); ein Widerruf wird sofort
+				wirksam. Wenn Sie ablehnen, können Sie weiterhin Belohnungsvideos ansehen; die
+				angezeigte Werbung ist dann jedoch nicht personalisiert.</p>
 			<p>Unabhängig von Ihrem Aufenthaltsort können Sie Ihre Werbe-ID in den
 				Einstellungen Ihres Geräts zurücksetzen oder löschen (auf den meisten
 				Android-Geräten: Einstellungen, Google, Werbung).</p>
@@ -546,8 +549,8 @@
 				Daten keiner bestimmten Person zuordnen. Zur Wahrnehmung Ihrer Rechte können
 				Sie:</p>
 			<ul>
-				<li>Ihre Einwilligung zur Werbung im Menü <em>Datenschutz</em> des Spiels
-					ändern;</li>
+				<li>Ihre Einwilligung im Menü <em>Datenschutz</em> des Spiels ändern oder
+					widerrufen;</li>
 				<li>Ihre Werbe-ID in den Einstellungen Ihres Geräts zurücksetzen oder
 					löschen;</li>
 				<li>das Spiel deinstallieren, wodurch jede Datenerhebung endet;</li>
