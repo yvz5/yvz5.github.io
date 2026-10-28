@@ -110,6 +110,12 @@
 			overflow-x: auto;
 		}
 
+		section+section {
+			margin-top: 72px;
+			padding-top: 40px;
+			border-top: 3px double var(--rule);
+		}
+
 		footer {
 			color: var(--muted);
 			font-size: 0.9rem;
@@ -125,152 +131,458 @@
 		.langs a {
 			text-decoration: none;
 		}
-
-		.langs [aria-current] {
-			color: var(--text);
-			font-weight: 600;
-		}
 	</style>
 </head>
 
 <body>
 	<main>
 
-		<nav class="langs"><a href="index.html" lang="en" aria-current="page">English</a> &middot; <a href="tr.html"
-				lang="tr">Türkçe</a> &middot; <a href="de.html" lang="de">Deutsch</a></nav>
+		<nav class="langs"><a href="#en" lang="en">English</a> &middot; <a href="#tr" lang="tr">Türkçe</a> &middot;
+			<a href="#de" lang="de">Deutsch</a>
+		</nav>
 
-		<h1>Iron Ladder Privacy Policy</h1>
-		<p class="meta">Effective date: 28 October 2026</p>
+		<!-- English -->
+		<section id="en" lang="en">
 
-		<div class="summary">
-			<p><strong>In short:</strong> Iron Ladder has no accounts and no servers of
-				its own. Your game is saved only on your phone. The game uses Google services
-				to show optional rewarded video ads, to count how the game is played and to
-				report crashes. None of this includes your name, your email address or
-				anything you type into the game.</p>
-		</div>
+			<h1>Iron Ladder Privacy Policy</h1>
+			<p class="meta">Effective date: 28 October 2026</p>
 
-		<h2>Who we are</h2>
-		<p>Iron Ladder ("the game") is a mobile role-playing game published on Google
-			Play by <strong>Ferrum Faber</strong> ("we", "us"). If you have any
-			question about this policy or your data, write to
-			<strong>ferrumfabersupport@gmail.com</strong>.
-		</p>
+			<div class="summary">
+				<p><strong>Summary:</strong> Iron Ladder does not use accounts and does not
+					operate servers of its own. Game data is stored solely on the user's device.
+					The game uses Google services to display rewarded video advertisements, to
+					measure how the game is used and to report crashes. None of these services
+					receives the user's name, email address or any text entered in the game.</p>
+			</div>
 
-		<h2>What stays on your phone</h2>
-		<p>Your hero, your progress, your items and your settings (language and sound)
-			are saved in the game's private storage on your device. They are never sent to
-			us or to anyone else. This includes the hero name you choose. Using "Start over"
-			in the game's menu deletes the save, and uninstalling the game deletes
-			everything it stored.</p>
+			<h2>Data controller</h2>
+			<p>Iron Ladder ("the game") is a mobile role-playing game published on Google
+				Play by <strong>Ferrum Faber</strong> ("we", "us"). Questions concerning this
+				policy or the processing of personal data may be addressed to
+				<strong>ferrumfabersupport@gmail.com</strong>.
+			</p>
 
-		<h2>What is collected, and by whom</h2>
-		<p>The game uses three Google services. Each one receives some technical data
-			from your device so that it can work.</p>
+			<h2>Data stored on the device</h2>
+			<p>The user's hero, progress, items and settings (language and sound) are
+				stored in the game's private storage on the device. This data is never
+				transmitted to us or to any third party, including the hero name chosen by the
+				user. The "Start over" option in the game's menu deletes the saved game, and
+				uninstalling the game deletes all data it has stored.</p>
 
-		<div class="scroll">
-			<table>
-				<thead>
-					<tr>
-						<th>Service</th>
-						<th>Why</th>
-						<th>What it receives</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Google AdMob</td>
-						<td>To show the rewarded videos you choose to watch in exchange for
-							in-game rewards.</td>
-						<td>Your device's advertising ID, IP address, device model and operating
-							system, language, and how you interacted with an ad.</td>
-					</tr>
-					<tr>
-						<td>Firebase Analytics</td>
-						<td>To understand how the game is played (for example which screens are
-							used, how far players get, and how often crafting succeeds) so it can be
-							improved.</td>
-						<td>An app instance identifier, device model and operating system,
-							country (estimated from your IP address), app version, session times,
-							and gameplay events made only of numbers and the game's own names for
-							its screens, items and dungeons.</td>
-					</tr>
-					<tr>
-						<td>Firebase Crashlytics</td>
-						<td>To find and fix crashes.</td>
-						<td>Crash reports: the error, where in the game it happened, the device
-							model, operating system and app version, and an installation
-							identifier.</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+			<h2>Data collected and the services collecting it</h2>
+			<p>The game uses three Google services. Each of them receives certain technical
+				data from the device in order to function.</p>
 
-		<p>The game never sends your hero's name, any text you type, your contacts,
-			your photos, your precise location, or your phone number. We do not sell your
-			data.</p>
+			<div class="scroll">
+				<table>
+					<thead>
+						<tr>
+							<th>Service</th>
+							<th>Purpose</th>
+							<th>Data received</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Google AdMob</td>
+							<td>Displaying rewarded video advertisements in exchange for in-game
+								rewards.</td>
+							<td>The device's advertising ID, IP address, device model and operating
+								system, language, and interactions with advertisements.</td>
+						</tr>
+						<tr>
+							<td>Firebase Analytics</td>
+							<td>Understanding how the game is used (for example, which screens are
+								visited, how far players progress and how often crafting succeeds) in
+								order to improve it.</td>
+							<td>An app instance identifier, device model and operating system,
+								country (estimated from the IP address), app version, session times,
+								and gameplay events consisting solely of numbers and the game's own
+								identifiers for its screens, items and dungeons.</td>
+						</tr>
+						<tr>
+							<td>Firebase Crashlytics</td>
+							<td>Identifying and correcting crashes.</td>
+							<td>Crash reports: the error, the point in the game at which it occurred,
+								the device model, operating system and app version, and an installation
+								identifier.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 
-		<p>Google Play also checks, when the game starts, whether a newer version is
-			available, and offers it through Google Play's own update screen. That check
-			is handled by Google Play.</p>
+			<p>The game never transmits the hero's name, any text entered by the user,
+				contacts, photos, precise location or telephone number. We do not sell
+				personal data.</p>
 
-		<h2>Ads and your choices</h2>
-		<p>Every video ad in the game is optional: it only plays when you tap a button
-			offering a reward, and closing it early simply means no reward. The game shows
-			no other kinds of ads.</p>
-		<p>If you are in the European Economic Area, the United Kingdom or Switzerland,
-			the game shows Google's consent message the first time it starts, where you
-			can accept or refuse personalised ads. Until you have answered it, the game
-			sends no analytics or crash reports; once you have answered, it sends them as
-			described above. You can change your answer at any time
-			from the game's menu (<em>Privacy settings</em> on the hero screen). If you
-			refuse, you can still watch rewarded videos, but the ads you see will not be
-			personalised.</p>
-		<p>Wherever you live, you can reset or delete your advertising ID in your
-			phone's settings (on most Android phones: Settings, then Google, then Ads).</p>
+			<p>When the game starts, Google Play also checks whether a newer version is
+				available and, if so, offers it through Google Play's own update screen. This
+				check is performed by Google Play.</p>
 
-		<h2>How long data is kept</h2>
-		<p>Data stored on your phone stays until you start over or uninstall the game.
-			Analytics data is kept by Google for a limited period set in the Firebase
-			project (between 2 and 14 months). Crash reports are kept by Firebase
-			Crashlytics for 90 days. Advertising data is kept according to Google's own
-			policies.</p>
+			<h2>Advertising and consent</h2>
+			<p>With one exception, every video advertisement in the game is optional: it is
+				played only when the user taps a button offering a reward, and closing it early
+				results only in the reward not being granted. The exception is the Survival
+				mode, in which every tenth run begins with a short video. The game displays no
+				other kinds of advertisement.</p>
+			<p>Users in the European Economic Area, the United Kingdom or Switzerland are
+				shown Google's consent message when the game is first started, where they may
+				accept or refuse personalised advertising. Until the message has been answered,
+				the game transmits no analytics data and no crash reports; once it has been
+				answered, they are transmitted as described above. The answer may be changed at
+				any time through the game's menu (<em>Privacy settings</em> on the hero screen).
+				Users who refuse may still watch rewarded videos, but the advertisements shown
+				will not be personalised.</p>
+			<p>Users in any country may reset or delete their advertising ID in the device
+				settings (on most Android devices: Settings, Google, Ads).</p>
 
-		<h2>Your rights</h2>
-		<p>Depending on where you live (for example under the GDPR in Europe or the
-			CCPA in California), you may have the right to access, correct or delete data
-			about you, and to object to its use. Because the game has no accounts, we
-			cannot link the data Google collects to you personally. To exercise your
-			rights, you can:</p>
-		<ul>
-			<li>change your ad consent in the game's <em>Privacy settings</em>;</li>
-			<li>reset or delete your advertising ID in your phone's settings;</li>
-			<li>uninstall the game, which stops all collection;</li>
-			<li>contact us at <strong>ferrumfabersupport@gmail.com</strong>, and we will help as far
-				as we can.</li>
-		</ul>
+			<h2>Retention</h2>
+			<p>Data stored on the device is kept until the user starts over or uninstalls
+				the game. Analytics data is retained by Google for a limited period set in the
+				Firebase project (between 2 and 14 months). Crash reports are retained by
+				Firebase Crashlytics for 90 days. Advertising data is retained in accordance
+				with Google's own policies.</p>
 
-		<h2>Children</h2>
-		<p>The game is not directed at children under 13, and we do not knowingly
-			collect data from them. If you believe a child has used the game and you want
-			their data removed, contact us.</p>
+			<h2>Rights of the user</h2>
+			<p>Depending on the user's place of residence (for example under the GDPR in
+				the European Union or the CCPA in California), the user may have the right to
+				access, rectify or erase personal data and to object to its processing. As the
+				game does not use accounts, we are unable to associate the data collected by
+				Google with any individual. To exercise these rights, the user may:</p>
+			<ul>
+				<li>change the advertising consent under <em>Privacy settings</em> in the
+					game;</li>
+				<li>reset or delete the advertising ID in the device settings;</li>
+				<li>uninstall the game, which ends all collection;</li>
+				<li>contact us at <strong>ferrumfabersupport@gmail.com</strong>; we will assist
+					to the extent possible.</li>
+			</ul>
 
-		<h2>Google's policies</h2>
-		<p>The data the services above collect is processed by Google under its own
-			terms:</p>
-		<ul>
-			<li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-			<li><a href="https://policies.google.com/technologies/partner-sites">How
-					Google uses information from apps that use its services</a></li>
-			<li><a href="https://firebase.google.com/support/privacy">Privacy and
-					security in Firebase</a></li>
-		</ul>
+			<h2>Age restriction</h2>
+			<p>The game contains depictions of violence and is intended exclusively for
+				adults aged 18 and over. It is not directed at minors, and we do not knowingly
+				collect data from anyone under the age of 18. Anyone who believes that a minor
+				has used the game and wishes the related data to be removed is asked to
+				contact us.</p>
 
-		<h2>Changes to this policy</h2>
-		<p>If the game starts collecting anything new, this page will be updated and
-			the effective date above will change.</p>
+			<h2>Google policies</h2>
+			<p>Data collected by the services listed above is processed by Google under its
+				own terms:</p>
+			<ul>
+				<li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+				<li><a href="https://policies.google.com/technologies/partner-sites">How
+						Google uses information from sites or apps that use its services</a></li>
+				<li><a href="https://firebase.google.com/support/privacy">Privacy and
+						security in Firebase</a></li>
+			</ul>
 
-		<footer>Iron Ladder &middot; Privacy Policy</footer>
+			<h2>Changes to this policy</h2>
+			<p>Should the game begin to collect any additional data, this policy will be
+				updated and the effective date above amended accordingly.</p>
+
+		</section>
+
+		<!-- Türkçe -->
+		<section id="tr" lang="tr">
+
+			<h1>Iron Ladder Gizlilik Politikası</h1>
+			<p class="meta">Yürürlük tarihi: 28 Ekim 2026</p>
+
+			<div class="summary">
+				<p><strong>Özet:</strong> Iron Ladder hesap kullanmaz ve kendine ait bir sunucu
+					işletmez. Oyun verileri yalnızca kullanıcının cihazında saklanır. Oyun, ödüllü
+					video reklamları göstermek, oyunun nasıl kullanıldığını ölçmek ve çökmeleri
+					bildirmek amacıyla Google hizmetlerinden yararlanır. Bu hizmetlerin hiçbiri
+					kullanıcının adını, e-posta adresini veya oyuna girilen herhangi bir metni
+					almaz.</p>
+			</div>
+
+			<h2>Veri sorumlusu</h2>
+			<p>Iron Ladder ("oyun"), <strong>Ferrum Faber</strong> ("biz") tarafından Google
+				Play'de yayımlanan bir mobil rol yapma oyunudur. Bu politikaya veya kişisel
+				verilerin işlenmesine ilişkin sorularınızı
+				<strong>ferrumfabersupport@gmail.com</strong> adresine iletebilirsiniz.
+			</p>
+
+			<h2>Cihazda saklanan veriler</h2>
+			<p>Kahramanınız, ilerlemeniz, eşyalarınız ve ayarlarınız (dil ve ses), oyunun
+				cihazınızdaki özel depolama alanında saklanır. Seçtiğiniz kahraman adı dahil bu
+				veriler hiçbir zaman tarafımıza veya üçüncü kişilere aktarılmaz. Oyun
+				menüsündeki "Baştan başla" seçeneği kayıtlı oyunu siler; oyunun kaldırılması ise
+				oyunun sakladığı tüm verileri siler.</p>
+
+			<h2>Toplanan veriler ve bunları toplayan hizmetler</h2>
+			<p>Oyun üç Google hizmeti kullanır. Bu hizmetlerin her biri, işlevini yerine
+				getirebilmek için cihazınızdan belirli teknik verileri alır.</p>
+
+			<div class="scroll">
+				<table>
+					<thead>
+						<tr>
+							<th>Hizmet</th>
+							<th>Amaç</th>
+							<th>Alınan veriler</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Google AdMob</td>
+							<td>Oyun içi ödüller karşılığında ödüllü video reklamların
+								gösterilmesi.</td>
+							<td>Cihazın reklam kimliği, IP adresi, cihaz modeli ve işletim sistemi,
+								dil ve reklamlarla etkileşimler.</td>
+						</tr>
+						<tr>
+							<td>Firebase Analytics</td>
+							<td>Oyunun geliştirilmesi amacıyla nasıl kullanıldığının anlaşılması
+								(örneğin hangi ekranların ziyaret edildiği, oyuncuların ne kadar
+								ilerlediği ve üretimin ne sıklıkla başarılı olduğu).</td>
+							<td>Uygulama örneği kimliği, cihaz modeli ve işletim sistemi, ülke (IP
+								adresinden tahmin edilir), uygulama sürümü, oturum süreleri ve yalnızca
+								sayılardan ve oyunun kendi ekran, eşya ve zindan tanımlayıcılarından
+								oluşan oyun olayları.</td>
+						</tr>
+						<tr>
+							<td>Firebase Crashlytics</td>
+							<td>Çökmelerin tespit edilmesi ve giderilmesi.</td>
+							<td>Çökme raporları: hata, oyunun hangi noktasında meydana geldiği, cihaz
+								modeli, işletim sistemi, uygulama sürümü ve bir kurulum kimliği.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<p>Oyun; kahraman adını, kullanıcı tarafından girilen herhangi bir metni,
+				kişileri, fotoğrafları, kesin konumu veya telefon numarasını hiçbir zaman
+				aktarmaz. Kişisel verileri satmayız.</p>
+
+			<p>Ayrıca oyun başlatıldığında Google Play daha yeni bir sürümün bulunup
+				bulunmadığını denetler ve varsa bunu Google Play'in kendi güncelleme ekranı
+				üzerinden sunar. Bu denetim Google Play tarafından gerçekleştirilir.</p>
+
+			<h2>Reklamlar ve onay</h2>
+			<p>Tek bir istisna dışında oyundaki tüm video reklamlar isteğe bağlıdır: reklam
+				yalnızca ödül sunan bir düğmeye dokunulduğunda oynatılır ve erken kapatılması
+				yalnızca ödülün verilmemesiyle sonuçlanır. İstisna, her onuncu turun kısa bir
+				videoyla başladığı Hayatta Kalma modudur. Oyun başka türde reklam
+				göstermez.</p>
+			<p>Avrupa Ekonomik Alanı, Birleşik Krallık veya İsviçre'deki kullanıcılara, oyun
+				ilk kez başlatıldığında Google'ın onay mesajı gösterilir; bu mesajda
+				kişiselleştirilmiş reklamlar kabul edilebilir veya reddedilebilir. Mesaj
+				yanıtlanana kadar oyun hiçbir analiz verisi veya çökme raporu aktarmaz; mesaj
+				yanıtlandıktan sonra bu veriler yukarıda açıklandığı şekilde aktarılır. Verilen
+				yanıt, oyun menüsünden (kahraman ekranındaki <em>Gizlilik ayarları</em>) her
+				zaman değiştirilebilir. Reddeden kullanıcılar ödüllü videoları izlemeye devam
+				edebilir; ancak gösterilen reklamlar kişiselleştirilmez.</p>
+			<p>Bulunduğunuz ülkeden bağımsız olarak reklam kimliğinizi cihaz ayarlarından
+				sıfırlayabilir veya silebilirsiniz (çoğu Android cihazda: Ayarlar, Google,
+				Reklamlar).</p>
+
+			<h2>Saklama süreleri</h2>
+			<p>Cihazda saklanan veriler, baştan başlanana veya oyun kaldırılana kadar
+				muhafaza edilir. Analiz verileri, Firebase projesinde belirlenen sınırlı bir süre
+				boyunca (2 ile 14 ay arasında) Google tarafından saklanır. Çökme raporları
+				Firebase Crashlytics tarafından 90 gün süreyle saklanır. Reklam verileri
+				Google'ın kendi politikalarına uygun olarak saklanır.</p>
+
+			<h2>Kullanıcı hakları</h2>
+			<p>Bulunduğunuz yere bağlı olarak (örneğin Türkiye'de 6698 sayılı Kişisel
+				Verilerin Korunması Kanunu, Avrupa Birliği'nde GDPR veya Kaliforniya'da CCPA
+				kapsamında) kişisel verilerinize erişme, bunların düzeltilmesini veya
+				silinmesini talep etme ve işlenmelerine itiraz etme haklarına sahip
+				olabilirsiniz. Oyun hesap kullanmadığından, Google tarafından toplanan verileri
+				herhangi bir kişiyle ilişkilendirmemiz mümkün değildir. Bu hakları kullanmak
+				için:</p>
+			<ul>
+				<li>oyundaki <em>Gizlilik ayarları</em> bölümünden reklam onayınızı
+					değiştirebilirsiniz;</li>
+				<li>cihaz ayarlarından reklam kimliğinizi sıfırlayabilir veya
+					silebilirsiniz;</li>
+				<li>oyunu kaldırarak tüm veri toplama işlemini sona erdirebilirsiniz;</li>
+				<li><strong>ferrumfabersupport@gmail.com</strong> adresinden bizimle iletişime
+					geçebilirsiniz; mümkün olan ölçüde yardımcı oluruz.</li>
+			</ul>
+
+			<h2>Yaş sınırı</h2>
+			<p>Oyun şiddet içeren sahneler barındırdığından yalnızca 18 yaş ve üzeri
+				yetişkinlere yöneliktir. Oyun reşit olmayanlara yönelik değildir ve 18 yaşından
+				küçük kişilerden bilerek veri toplamayız. Reşit olmayan bir kişinin oyunu
+				kullandığını düşünen ve ilgili verilerin kaldırılmasını isteyen kişilerin
+				bizimle iletişime geçmesi rica olunur.</p>
+
+			<h2>Google politikaları</h2>
+			<p>Yukarıda belirtilen hizmetlerin topladığı veriler, Google tarafından kendi
+				koşulları çerçevesinde işlenir:</p>
+			<ul>
+				<li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik
+						Politikası</a></li>
+				<li><a href="https://policies.google.com/technologies/partner-sites?hl=tr">Google'ın,
+						hizmetlerini kullanan site veya uygulamalardan gelen bilgileri nasıl
+						kullandığı</a></li>
+				<li><a href="https://firebase.google.com/support/privacy">Firebase'de gizlilik
+						ve güvenlik</a> (İngilizce)</li>
+			</ul>
+
+			<h2>Politikadaki değişiklikler</h2>
+			<p>Oyunun ek veri toplamaya başlaması hâlinde bu politika güncellenir ve
+				yukarıdaki yürürlük tarihi buna göre değiştirilir.</p>
+
+		</section>
+
+		<!-- Deutsch -->
+		<section id="de" lang="de">
+
+			<h1>Iron Ladder: Datenschutzerklärung</h1>
+			<p class="meta">Gültig ab: 28. Oktober 2026</p>
+
+			<div class="summary">
+				<p><strong>Zusammenfassung:</strong> Iron Ladder verwendet keine Benutzerkonten
+					und betreibt keine eigenen Server. Spieldaten werden ausschließlich auf Ihrem
+					Gerät gespeichert. Das Spiel nutzt Google-Dienste, um Belohnungsvideos
+					anzuzeigen, die Nutzung des Spiels zu messen und Abstürze zu melden. Keiner
+					dieser Dienste erhält Ihren Namen, Ihre E-Mail-Adresse oder im Spiel
+					eingegebene Texte.</p>
+			</div>
+
+			<h2>Verantwortlicher</h2>
+			<p>Iron Ladder („das Spiel“) ist ein Rollenspiel für Mobilgeräte, das von
+				<strong>Ferrum Faber</strong> („wir“, „uns“) auf Google Play veröffentlicht wird.
+				Fragen zu dieser Datenschutzerklärung oder zur Verarbeitung personenbezogener
+				Daten richten Sie bitte an <strong>ferrumfabersupport@gmail.com</strong>.
+			</p>
+
+			<h2>Auf dem Gerät gespeicherte Daten</h2>
+			<p>Ihr Held, Ihr Fortschritt, Ihre Gegenstände und Ihre Einstellungen (Sprache
+				und Ton) werden im privaten Speicher des Spiels auf Ihrem Gerät gespeichert.
+				Diese Daten, einschließlich des von Ihnen gewählten Heldennamens, werden zu
+				keinem Zeitpunkt an uns oder an Dritte übermittelt. Die Option „Neu anfangen“
+				im Menü des Spiels löscht den Spielstand; bei der Deinstallation des Spiels
+				werden sämtliche von ihm gespeicherten Daten gelöscht.</p>
+
+			<h2>Erhobene Daten und erhebende Dienste</h2>
+			<p>Das Spiel nutzt drei Google-Dienste. Jeder dieser Dienste erhält bestimmte
+				technische Daten von Ihrem Gerät, um seine Funktion zu erfüllen.</p>
+
+			<div class="scroll">
+				<table>
+					<thead>
+						<tr>
+							<th>Dienst</th>
+							<th>Zweck</th>
+							<th>Übermittelte Daten</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Google AdMob</td>
+							<td>Anzeige von Belohnungsvideos im Austausch gegen Belohnungen im
+								Spiel.</td>
+							<td>Werbe-ID des Geräts, IP-Adresse, Gerätemodell und Betriebssystem,
+								Sprache sowie Interaktionen mit Anzeigen.</td>
+						</tr>
+						<tr>
+							<td>Firebase Analytics</td>
+							<td>Verständnis der Nutzung des Spiels (zum Beispiel welche Bildschirme
+								aufgerufen werden, wie weit Spieler vorankommen und wie häufig das
+								Schmieden gelingt), um es zu verbessern.</td>
+							<td>Eine App-Instanz-ID, Gerätemodell und Betriebssystem, Land (anhand der
+								IP-Adresse geschätzt), App-Version, Sitzungszeiten sowie Spielereignisse,
+								die ausschließlich aus Zahlen und spieleigenen Kennungen für Bildschirme,
+								Gegenstände und Dungeons bestehen.</td>
+						</tr>
+						<tr>
+							<td>Firebase Crashlytics</td>
+							<td>Erkennung und Behebung von Abstürzen.</td>
+							<td>Absturzberichte: der Fehler, die Stelle im Spiel, an der er auftrat,
+								Gerätemodell, Betriebssystem und App-Version sowie eine
+								Installations-ID.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<p>Das Spiel übermittelt zu keinem Zeitpunkt den Namen Ihres Helden, von Ihnen
+				eingegebene Texte, Kontakte, Fotos, Ihren genauen Standort oder Ihre
+				Telefonnummer. Wir verkaufen keine personenbezogenen Daten.</p>
+
+			<p>Beim Start des Spiels prüft Google Play zudem, ob eine neuere Version
+				verfügbar ist, und bietet diese gegebenenfalls über den eigenen
+				Aktualisierungsbildschirm von Google Play an. Diese Prüfung wird von Google Play
+				durchgeführt.</p>
+
+			<h2>Werbung und Einwilligung</h2>
+			<p>Mit einer Ausnahme ist jede Videowerbung im Spiel freiwillig: Sie wird nur
+				abgespielt, wenn Sie auf eine Schaltfläche tippen, die eine Belohnung anbietet,
+				und ein vorzeitiges Schließen hat lediglich zur Folge, dass die Belohnung
+				entfällt. Die Ausnahme ist der Modus „Überleben“, in dem jeder zehnte Lauf mit
+				einem kurzen Video beginnt. Andere Arten von Werbung zeigt das Spiel nicht.</p>
+			<p>Wenn Sie sich im Europäischen Wirtschaftsraum, im Vereinigten Königreich oder
+				in der Schweiz befinden, wird Ihnen beim ersten Start des Spiels die
+				Einwilligungsmeldung von Google angezeigt, in der Sie personalisierte Werbung
+				annehmen oder ablehnen können. Bis Sie diese Meldung beantwortet haben,
+				übermittelt das Spiel weder Analysedaten noch Absturzberichte; danach werden
+				diese wie oben beschrieben übermittelt. Sie können Ihre Entscheidung jederzeit
+				im Menü des Spiels ändern (<em>Datenschutz</em> auf dem Heldenbildschirm). Wenn
+				Sie ablehnen, können Sie weiterhin Belohnungsvideos ansehen; die angezeigte
+				Werbung ist dann jedoch nicht personalisiert.</p>
+			<p>Unabhängig von Ihrem Aufenthaltsort können Sie Ihre Werbe-ID in den
+				Einstellungen Ihres Geräts zurücksetzen oder löschen (auf den meisten
+				Android-Geräten: Einstellungen, Google, Werbung).</p>
+
+			<h2>Speicherdauer</h2>
+			<p>Auf dem Gerät gespeicherte Daten bleiben erhalten, bis Sie neu anfangen oder
+				das Spiel deinstallieren. Analysedaten werden von Google für einen im
+				Firebase-Projekt festgelegten, begrenzten Zeitraum (zwischen 2 und 14 Monaten)
+				gespeichert. Absturzberichte werden von Firebase Crashlytics 90 Tage lang
+				gespeichert. Werbedaten werden gemäß den Richtlinien von Google
+				gespeichert.</p>
+
+			<h2>Ihre Rechte</h2>
+			<p>Abhängig von Ihrem Wohnort (zum Beispiel nach der Datenschutz-Grundverordnung
+				in der Europäischen Union oder dem CCPA in Kalifornien) haben Sie
+				möglicherweise das Recht auf Auskunft, Berichtigung und Löschung Ihrer
+				personenbezogenen Daten sowie das Recht, der Verarbeitung zu widersprechen. Da
+				das Spiel keine Benutzerkonten verwendet, können wir die von Google erhobenen
+				Daten keiner bestimmten Person zuordnen. Zur Wahrnehmung Ihrer Rechte können
+				Sie:</p>
+			<ul>
+				<li>Ihre Einwilligung zur Werbung im Menü <em>Datenschutz</em> des Spiels
+					ändern;</li>
+				<li>Ihre Werbe-ID in den Einstellungen Ihres Geräts zurücksetzen oder
+					löschen;</li>
+				<li>das Spiel deinstallieren, wodurch jede Datenerhebung endet;</li>
+				<li>sich unter <strong>ferrumfabersupport@gmail.com</strong> an uns wenden; wir
+					unterstützen Sie im Rahmen unserer Möglichkeiten.</li>
+			</ul>
+
+			<h2>Altersbeschränkung</h2>
+			<p>Das Spiel enthält Gewaltdarstellungen und richtet sich ausschließlich an
+				Erwachsene ab 18 Jahren. Es ist nicht für Minderjährige bestimmt, und wir
+				erheben wissentlich keine Daten von Personen unter 18 Jahren. Sollten Sie der
+				Ansicht sein, dass eine minderjährige Person das Spiel genutzt hat, und die
+				Entfernung der betreffenden Daten wünschen, wenden Sie sich bitte an uns.</p>
+
+			<h2>Richtlinien von Google</h2>
+			<p>Die von den oben genannten Diensten erhobenen Daten werden von Google nach
+				dessen eigenen Bedingungen verarbeitet:</p>
+			<ul>
+				<li><a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung
+						von Google</a></li>
+				<li><a href="https://policies.google.com/technologies/partner-sites?hl=de">Wie
+						Google Daten von Websites oder Apps verwendet, die Google-Dienste
+						nutzen</a></li>
+				<li><a href="https://firebase.google.com/support/privacy">Datenschutz und
+						Sicherheit in Firebase</a> (Englisch)</li>
+			</ul>
+
+			<h2>Änderungen dieser Datenschutzerklärung</h2>
+			<p>Sollte das Spiel beginnen, zusätzliche Daten zu erheben, wird diese
+				Datenschutzerklärung aktualisiert und das oben angegebene Datum entsprechend
+				geändert.</p>
+
+		</section>
+
+		<footer>Iron Ladder &middot; Privacy Policy &middot; Gizlilik Politikası &middot; Datenschutzerklärung</footer>
 
 	</main>
 </body>
